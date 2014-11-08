@@ -2,7 +2,7 @@
 title: marsicdev
 email: marsicdev@gmail.com
 description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/blog"
+baseurl: ""
 url: "http://marsicdev.github.io"
 twitter_username: marsic
 github_username:  marsicdev
