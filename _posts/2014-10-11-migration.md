@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Migration"
-date:       2014-07-01 12:00:00
+date:       2014-11-10 12:00:00
 author:     "Marko Arsic"
 header-img: "img/post-bg-02.jpg"
 ---
