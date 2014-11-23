@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Software Rewrite"
-date:       2014-01-10 12:00:00
+date:       2014-04-13 12:00:00
 author:     "Marko Arsic"
 header-img: "img/post-bg-02.jpg"
 ---
