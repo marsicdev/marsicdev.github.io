@@ -2,15 +2,15 @@
 title: marsicdev
 email: marsicdev@gmail.com
 description: "Blog about programming, travel and stuff"
-baseurl: "http://marsicdev.github.io"
-url: ""
+baseurl: ""
+url: "http://marsicdev.github.io"
 twitter_username: marsic
 github_username:  marsicdev
-# facebook_username:  IronSummitMedia
+# facebook_username:  
 
 # Build settings
 markdown: kramdown
 highlighter: pygments
 permalink: pretty
-paginate: 5
+paginate: 10
 exclude: ["node_modules"]
