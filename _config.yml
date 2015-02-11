@@ -2,7 +2,7 @@
 title: marsicdev
 email: marsicdev@gmail.com
 description: "Blog about programming, travel and stuff"
-baseurl: ""
+baseurl: "http://marsicdev.github.io"
 url: "http://marsicdev.github.io"
 twitter_username: marsic
 github_username:  marsicdev
