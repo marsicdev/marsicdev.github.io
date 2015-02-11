@@ -1,9 +1,9 @@
 # Site settings
 title: marsicdev
 email: marsicdev@gmail.com
-description: "Write your site description here. It will be used as your sites meta description as well!"
+description: "Blog about programming, travel and stuff"
 baseurl: "http://marsicdev.github.io"
-url: "http://marsicdev.github.io"
+url: ""
 twitter_username: marsic
 github_username:  marsicdev
 # facebook_username:  IronSummitMedia
