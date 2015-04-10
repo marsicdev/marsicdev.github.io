@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Software Rewrite"
-date:       2014-04-13 12:00:00
+date:       2014-04-03 12:00:00
 author:     "Marko Arsic"
 summary:    In some ways, recreating a program is like remaking a movie — people have lots of expectations.
 categories: software
