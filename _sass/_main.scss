@@ -89,6 +89,30 @@ body {
   opacity: 0.88;
 }
 
+.ic {
+  padding: 5px;
+  width: 130px;
+  text-align: center;
+  font-variant: small-caps !important;
+  color: white;
+}
+
+.fb {
+  background-color: #244872;
+}
+
+.tw {
+  background-color: #26C4F1;
+}
+
+.in {
+  background-color: #007BB6;
+}
+
+.go {
+  background-color: #DD4B39;
+}
+
 /*
   Table styles copied from Bootstrap
   Copyright (c) 2013 Twitter, Inc
@@ -146,7 +170,7 @@ table {
 .posts .post {
   margin-bottom: 0.75em;
   padding-bottom: .375em;
-  border-bottom: thin solid #f3f3f3;
+  border-bottom: thin solid #55BC77;
 }
 
 .posts .post:last-child {
@@ -158,7 +182,7 @@ table {
 .post-link .post-title {
   margin-top: 0;
   font-weight: 600;
-  color: #333;
+  color: #74BADE;
 }
 
 .post-footer {
@@ -213,12 +237,16 @@ table {
 .meta,
 .post-meta {
   width: auto;
-  font-size: 1rem;
+  font-size: 0.6rem;
   font-weight: 300;
   margin: 0;
   padding: .25em 0;
-  color: #7a7a7a;
   font-style: italic;
+  color: rgba(0,0,0,.7);
+  background-color: #FAF46A;
+  text-align: center;
+  width: 18%;
+  border-radius: 5px;
 }
 
 .pagination .button {
@@ -310,7 +338,7 @@ h6,
   font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 900;
   line-height: 1.2;
-  margin: 1em 0 0.5em;
+  // margin: 1em 0 0.5em;
 }
 
 .social-icons {
@@ -340,7 +368,7 @@ h6,
   .post-meta {
     margin: 0;
     padding: 0;
-    font-size: 1.25rem;
+    font-size: 0.9rem;
   }
 
   .h1,
@@ -385,7 +413,7 @@ h6,
   .posts .post {
     margin-bottom: 1.333em;
     padding-bottom: 0.666em;
-    border-bottom: thin solid #f3f3f3;
+    border-bottom: thin solid #55BC77;
   }
 
   .posts .post:last-child {
@@ -476,7 +504,7 @@ h6,
   .posts .post {
     margin-bottom: 2.666em;
     padding-bottom: 1.333em;
-    border-bottom: thin solid #f3f3f3;
+    border-bottom: thin solid #55BC77;
   }
 
   .posts .post:last-child {
@@ -487,7 +515,7 @@ h6,
 }
 
 .share-page {
-  font-size:  0.65em;  
+  font-size:  0.65em;
   padding: 2em 0 0 0;
 }
 
