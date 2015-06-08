@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Brazil
+subtitle: Here I will try to sum up a year of living in Florianopolis, Brasil!
 permalink: /brazil/
 ---
 
