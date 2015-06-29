@@ -1,4 +1,3 @@
-marsicdev.github.io
-===================
+# marsicdev
 
-io pages
+Personal website

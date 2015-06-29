@@ -3,9 +3,9 @@ layout:     post
 title:      "Programming as a process"
 date:       2014-01-10 12:00:00
 author:     "Marko Arsic"
-header-img: "img/post-bg-02.jpg"
+summary:	Writing software engages not only developers but also designers, business strategists, copy writers, and marketers at every stage. 
 ---
 
-<p><q>Writing software engages not only developers but also designers, business strategists, copy writers, and marketers at every stage. Most importantly, it’s a continuous conversation with end users and customers. To be a programmer is not to accept introversion at face value but to embrace being part of a team. Programming is an intensively social and collaborative process. The complexities that come with dealing with people far exceed technology problems. Collaboration starts with conversations. Ideas flow quicker when they are in the open.</q></p>
+Writing software engages not only developers but also designers, business strategists, copy writers, and marketers at every stage. Most importantly, it’s a continuous conversation with end users and customers. To be a programmer is not to accept introversion at face value but to embrace being part of a team. Programming is an intensively social and collaborative process. The complexities that come with dealing with people far exceed technology problems. Collaboration starts with conversations. Ideas flow quicker when they are in the open.
 
-<p><q>Always ask yourself, “What can I do for my teammates so they can get their work done more efficiently—and with better educated decisions?”</q>></p>
+Always ask yourself: “What can I do for my teammates so they can get their work done more efficiently—and with better educated decisions?”
