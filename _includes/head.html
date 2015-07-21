@@ -8,10 +8,6 @@
     {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ', ' }}">{% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="/js/modernizr.custom.js"></script>
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/pixyll.css" | prepend: site.baseurl }}" type="text/css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
@@ -39,6 +35,6 @@
     <meta property="og:site_name" content="{{ site.title }}">
 
     <!-- Icons -->
-    <link rel="icon" type="image/png" href="{{ site.baseurl }}favicon.ico">
+    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon" />
 
 </head>
