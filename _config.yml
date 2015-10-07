@@ -3,7 +3,7 @@ title:       marsic|dev
 email:       marsicdev@gmail.com
 author:      Marko Arsić
 description: "Programming is what I do."
-baseurl:     "http://marsic.info"
+baseurl:     ""
 url:         "https://marsic.info"
 
 # Google analytics
