@@ -4,7 +4,7 @@ email:       marsicdev@gmail.com
 author:      Marko Arsić
 description: "Programming is what I do."
 baseurl:     ""
-url:         "https://marsic.info"
+url:         "http://marsic.info"
 
 # Google analytics
 google_analytics: UA-30594419-1
