@@ -9,13 +9,37 @@ categories: development, tools
 
 Android Studio brings tons of keyboard shortcuts that helps developers to keep hands more on keyboard rather than relying much on the mouse. The lesser you use mouse, results in faster development. Well, let us see some of the shortcuts for android studio for Mac user.
 
+### No more Tabs
+
+There are many ways to navigate a project inside Android Studio that doesn’t necessarily include having to look through a list of tabs and figure out where you have to click next. 
+
+Switch tabs off. You don’t need tabs. 
+
+`image here`
+
 ### Distraction free
+
+Trust me when I say that while you are coding you don't need in your sight all the small buttons and the line numbers that are around your editor. Actually, ask your self when was the last time that you looked at line number?
+
+`distraction free mode image here`
 
 ### Plugins
 
+Plugins help you to do some boring things like typing parcable code or generating boilersplate code or even with navigation. So choose your plugins carefully and here are some that I'm using:
+
+- Parcable 
+- Builder Pattern
+- etc...
+
 ### Logcat
 
+Color your logcat to see the diference between debug and info warnings
+
+`image here`
+
 ### Shortcuts
+
+And finally if you get used to this shortcuts and remmember them your coding and navigation will be piace of cake:
 
 | Default Android Studio Command Type                                     | Shortcut                         |
 |:------------------------------------------------------------------------|:--------------------------------:|
