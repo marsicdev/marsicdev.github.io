@@ -9,6 +9,10 @@ categories: development, tools
 
 Android Studio brings tons of keyboard shortcuts that helps developers to keep hands more on keyboard rather than relying much on the mouse. The lesser you use mouse, results in faster development.
 
+![Android Studio](/images/as-logo.png "Android Studio logo")
+
+Here are some general tips how to boost your productivity and get your development on a higher level.
+
 ### No more Tabs
 
 There are many ways to navigate a project inside Android Studio that doesn’t necessarily include having to look through a list of tabs and figure out where you have to click next.
@@ -17,15 +21,17 @@ Switch tabs off. You don’t need tabs.
 
 ![No more Tabs](/images/as-setup-no-tabs.png)
 
+I got this idea from this excellent [post by Hadi Hariri](http://hadihariri.com/2014/06/24/no-tabs-in-intellij-idea/).
+
 ### Distraction free
 
 Trust me when I say that while you are coding you don't need in your sight all the small buttons and the line numbers that are around your editor. Actually, ask your self when was the last time that you looked at line number?
 
-![Distraction free](/images/as-setup-destraction-free.png)
+![Distraction free mode](/images/as-setup-destraction-free.png)
 
 ### Plugins
 
-Plugins help you to do some boring things like typing parcelable code or generating some other boilerplate code or even with navigation. So choose your plugins carefully and here are some that I'm using:
+Plugins can help you to do some boring everyday things like implementing parcelable code or generating some other boilerplate code that you need to do often or even with navigation. So choose your plugins carefully as they are you weapon of choice. Here are some that I'm using:
 
 - [ADB idea](https://github.com/pbreault/adb-idea)
 - [Android WiFiADB](https://github.com/pedrovgs/AndroidWiFiADB)
@@ -34,9 +40,12 @@ Plugins help you to do some boring things like typing parcelable code or generat
 - [Android Parcelable](https://github.com/mcharmas/android-parcelable-intellij-plugin)
 
 ### Shortcuts
-Well, let us see some of the shortcuts for android studio for Mac user. If you get used to this shortcuts and remember them your coding and navigation will be peace of cake:
 
-| Default Android Studio Command Type                                     | Shortcut                         |
+Well, let us see some of the shortcuts for android studio for Mac user. If you get used to this shortcuts and remember them your coding and navigation will be peace of cake.
+
+#### Default Android Studio Shortcuts
+
+| Command Type     		                                                  | Shortcut                         |
 |:------------------------------------------------------------------------|:--------------------------------:|
 | Display list of available auto-fixes for code warning/error at cursor   | <kbd>Alt</kbd>+<kbd>Enter</kbd>  |
 | Rename **all** copies of the variable/method/class at cursor            | <kbd>Shift</kbd>+<kbd>F6</kbd> |
@@ -76,7 +85,11 @@ Well, let us see some of the shortcuts for android studio for Mac user. If you g
 | Clipboard history                                                       | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>            |
 | Project settings                                                        | <kbd>Cmd</kbd>+<kbd>,</kbd>            |
 
-| Personalized Android Studio Command Type                                | Shortcut                         |
+#### Custom Android Studio Shortcuts
+
+For some common repetitive everyday tasks I added some custom shortcuts
+
+| Command Type                                                            | Shortcut                         |
 |:------------------------------------------------------------------------|:--------------------------------:|
 | Sync with Gradle                                                        | <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>            |
 | Compare with same repository version                                    | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd>            |
