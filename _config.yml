@@ -11,7 +11,7 @@ google_analytics: UA-30594419-1
 
 # Optional features
 animated:           false
-show_related_posts: true
+show_related_posts: false
 show_post_footers:  false
 
 # Disqus post comments
@@ -23,7 +23,7 @@ show_social_icons: true
 github_username: marsicdev
 stackoverflow_id:
 twitter_username: marsic
-google_plus_id:
+google_plus_id: 111634024216622594544
 linkedin_username: marsic
 bitcoin_url:
 paypal_url:
