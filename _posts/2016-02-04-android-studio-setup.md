@@ -7,39 +7,34 @@ summary:    The lesser you use mouse, results in faster development.
 categories: development, tools
 ---
 
-Android Studio brings tons of keyboard shortcuts that helps developers to keep hands more on keyboard rather than relying much on the mouse. The lesser you use mouse, results in faster development. Well, let us see some of the shortcuts for android studio for Mac user.
+Android Studio brings tons of keyboard shortcuts that helps developers to keep hands more on keyboard rather than relying much on the mouse. The lesser you use mouse, results in faster development.
 
 ### No more Tabs
 
-There are many ways to navigate a project inside Android Studio that doesn’t necessarily include having to look through a list of tabs and figure out where you have to click next. 
+There are many ways to navigate a project inside Android Studio that doesn’t necessarily include having to look through a list of tabs and figure out where you have to click next.
 
-Switch tabs off. You don’t need tabs. 
+Switch tabs off. You don’t need tabs.
 
-`image here`
+![No more Tabs](/images/as-setup-no-tabs.png)
 
 ### Distraction free
 
 Trust me when I say that while you are coding you don't need in your sight all the small buttons and the line numbers that are around your editor. Actually, ask your self when was the last time that you looked at line number?
 
-`distraction free mode image here`
+![Distraction free](/images/as-setup-destraction-free.png)
 
 ### Plugins
 
-Plugins help you to do some boring things like typing parcable code or generating boilersplate code or even with navigation. So choose your plugins carefully and here are some that I'm using:
+Plugins help you to do some boring things like typing parcelable code or generating some other boilerplate code or even with navigation. So choose your plugins carefully and here are some that I'm using:
 
-- Parcable 
-- Builder Pattern
-- etc...
-
-### Logcat
-
-Color your logcat to see the diference between debug and info warnings
-
-`image here`
+- [ADB idea](https://github.com/pbreault/adb-idea)
+- [Android WiFiADB](https://github.com/pedrovgs/AndroidWiFiADB)
+- [InnerBuilder](https://github.com/analytically/innerbuilder)
+- [CodeGlance](https://github.com/Vektah/CodeGlance)
+- [Android Parcelable](https://github.com/mcharmas/android-parcelable-intellij-plugin)
 
 ### Shortcuts
-
-And finally if you get used to this shortcuts and remmember them your coding and navigation will be piace of cake:
+Well, let us see some of the shortcuts for android studio for Mac user. If you get used to this shortcuts and remember them your coding and navigation will be peace of cake:
 
 | Default Android Studio Command Type                                     | Shortcut                         |
 |:------------------------------------------------------------------------|:--------------------------------:|
@@ -88,4 +83,3 @@ And finally if you get used to this shortcuts and remmember them your coding and
 | Clean project                                                           | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd>            |
 | Duplicate line                                                          | <kbd>Ctrl</kbd>+<kbd>Cmd</kbd>+<kbd>down</kbd>            |
 | Delete line                                                             | <kbd>Cmd</kbd>+<kbd>D</kbd>            |
-
