@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Why an empty state or zero-data state matters"
-date:       2016-02-28 09:00:00
+date:       2016-02-27 09:00:00
 author:     "Marko Arsic"
 summary:    For a good design each empty state is an opportunity.
 categories: design
