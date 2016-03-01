@@ -13,6 +13,7 @@ A [Service](http://developer.android.com/guide/components/services.html) is an a
 ### When, how, where?
 
 **When to use?**
+
 - Task with no UI, but shouldn't be too long. Use threads within service for long tasks.
 - Long task in general.
 
@@ -33,6 +34,7 @@ May block main thread
 ### When, how, where?
 
 **When to use?**
+
 - Long task usually with no communication to main thread. If communication is required, can use main thread handler or broadcast intents
 - When callbacks are needed (Intent triggered tasks).
 
@@ -54,6 +56,7 @@ May block main thread
 ### When, how, where?
 
 **When to use?**
+
 - Small task having to communicate with main thread
 - For tasks in parallel use multiple instances OR Executor
 - Disk-bound tasks that might take more than a few milliseconds
@@ -74,6 +77,8 @@ May block main thread
 A [Thread](http://developer.android.com/reference/java/lang/Thread.html) is a concurrent unit of execution. It has its own call stack. There are two methods to implement threads in applications. One is providing a new class that extends Thread and overriding its run() method. The other is providing a new Thread instance with a Runnable object during its creation.
 
 ### When, how, where?
+
+**When to use?**
 
 - Long task in general (Network operations which involve moderate to large amounts of data either uploading or downloading)
 - High-CPU tasks which need to be run in the background
