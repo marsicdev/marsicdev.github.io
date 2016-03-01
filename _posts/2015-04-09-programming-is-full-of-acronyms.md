@@ -11,28 +11,28 @@ Programming is full of acronyms
 
 Nobody likes to hear that their code is stupid. It is offending. Don’t say it. But honestly: Most of the code being written around the globe is an unmaintainable, unreusable mess.
 
- __D__on’t __R__epeat __Y__ourself and stay __DRY__ 
+ **D**on’t **R**epeat **Y**ourself and stay **DRY** 
 
-__KISS__ is teling you to __K__eep __I__t __S__imple, __S__tupid!
+**KISS** is teling you to **K**eep **I**t **S**imple, **S**tupid!
 
-What makes code __STUPID__?
+What makes code **STUPID**?
 
- * __S__ingleton
- * __T__ight coupling
- * __U__ntestability
- * __P__remature Optimization
- * __I__ndescriptive Naming
- * __D__uplication
+ * **S**ingleton
+ * **T**ight coupling
+ * **U**ntestability
+ * **P**remature Optimization
+ * **I**ndescriptive Naming
+ * **D**uplication
 
 SOLID deciphers to:
 
- * __S__ingle responsibility principle
- * __O__pen/closed principle
- * __L__iskov substitution principle
- * __I__nterface segregation principle
- * __D__ependency inversion principle
+ * **S**ingle responsibility principle
+ * **O**pen/closed principle
+ * **L**iskov substitution principle
+ * **I**nterface segregation principle
+ * **D**ependency inversion principle
 
-__GRASP__ stands for __G__eneral __R__esponsibility __A__ssignment __S__oftware __P__rinciples, which are the following:
+**GRASP** stands for **G**eneral **R**esponsibility **A**ssignment **S**oftware **P**rinciples, which are the following:
 
  * Information Expert
  * Creator
