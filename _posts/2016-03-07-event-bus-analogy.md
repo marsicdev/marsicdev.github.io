@@ -12,6 +12,7 @@ Loose coupling. When you want to achieve that, go for using event bus.
 
 EventBus is flexible enough to accomodate any broadcaster consumer pattern. The advantage is that broadcaster does not know nor care who would consume the event.
 
-***EvenBus frameworks for java/android***
+#### EvenBus frameworks for java/android
+
 * [Otto](https://github.com/square/otto)
 * [EventBus](https://github.com/greenrobot/EventBus)
