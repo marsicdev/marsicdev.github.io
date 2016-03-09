@@ -25,3 +25,5 @@ For healthy discussion, you need a minimum of three ideas. One idea is a bad ide
 * Staying task-focused and not making personal attacks, having side conversations, or fiddling with your phone is important.
 
 Give every participant the right to expect and demand that meetings are effective.
+
+Source: [A Meetings Manifesto](https://medium.com/better-humans/a-meetings-manifesto-5a8caf6281b#.6saioex0m)
