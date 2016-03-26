@@ -1,3 +1,3 @@
-# marsicdev
+# marsic | dev
 
-Personal website
+![No more Tabs](/images/mdev-logo.png)
