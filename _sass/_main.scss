@@ -16,13 +16,6 @@ MIT License http://opensource.org/licenses/MIT
 body {
     font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
     -webkit-font-smoothing: antialiased;
-    // font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
-    // -webkit-touch-callout: none;
-    // -webkit-user-select: none;
-    // -khtml-user-select: none;
-    // -moz-user-select: none;
-    // -ms-user-select: none;
-    // user-select: none;
 }
 
 html, body {
@@ -311,7 +304,10 @@ pre, code {
 }
 
 code {
-    color: #7a7a7a;
+    color: #4a4a4a;
+    padding: 4px;
+    background: #eeeeed;
+    font-size: 18px;
 }
 
 pre {
