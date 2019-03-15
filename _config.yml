@@ -4,10 +4,10 @@ email:       dev@marsic.info
 author:      Marko Arsić
 description: "Programming is what I do."
 baseurl:     ""
-url:         "https://marsic.info"
+url:         "https://marsic.dev"
 
 # Google analytics
-google_analytics: UA-30594419-1
+google_analytics: UA-133876990-2
 
 # Optional features
 animated:           false
@@ -23,7 +23,7 @@ show_social_icons: true
 github_username: marsicdev
 stackoverflow_id:
 twitter_username: marsic
-google_plus_id: 111634024216622594544
+google_plus_id: 
 linkedin_username: marsic
 bitcoin_url:
 paypal_url:
