@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Planning is hard because...
-date:       2021-16-11 12:00:00
+date:       2021-11-16 11:30:00
 author:     Marko Arsić
 summary:    Planning is hard because it's inherently different
 ---
