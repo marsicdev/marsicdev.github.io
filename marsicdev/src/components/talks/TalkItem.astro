@@ -1,0 +1,20 @@
+---
+import type { CollectionEntry } from "astro:content"
+
+type Props = {
+    talk: CollectionEntry<"talks">
+}
+
+const { talk } = Astro.props
+const { title, summary, date } = talk.data
+---
+
+<article style="margin: 0.5rem 0px;">
+    <h2>
+        {title}
+    </h2>
+    <p>{summary}</p>
+    <footer>
+        <small>{date}</small>
+    </footer>
+</article>

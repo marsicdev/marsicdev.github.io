@@ -1,0 +1,14 @@
+---
+import TalkList from "@components/talks/TalkList.astro"
+import BaseLayout from "@layouts/BaseLayout.astro"
+import { getCollection } from "astro:content"
+
+const talks = await getCollection("talks")
+---
+
+<BaseLayout>
+    <main>
+        <h1>Talks</h1>
+        <TalkList talks={talks} grid />
+    </main>
+</BaseLayout>

@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from "astro:content"
+import TalkItem from "./TalkItem.astro"
+
+type Props = {
+    talks: CollectionEntry<"talks">[]
+    grid?: boolean
+}
+
+const { talks, grid = false } = Astro.props
+---
+
+<section>
+    {
+        talks.map((talk, index, items) => {
+            if (!grid) {
+                return <TalkItem talk={talk} />
+            }
+
+            if (index % 2 === 0) {
+                return (
+                    <div class="grid">
+                        <TalkItem talk={talk} />
+                        {items[index + 1] ? <TalkItem talk={items[index + 1]} /> : <div />}
+                    </div>
+                )
+            }
+        })
+    }
+</section>

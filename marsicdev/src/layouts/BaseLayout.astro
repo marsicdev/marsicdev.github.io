@@ -1,0 +1,31 @@
+---
+// Supports weights 100-900
+import "@fontsource-variable/montserrat"
+import "@picocss/pico"
+
+import { ViewTransitions } from "astro:transitions"
+
+import GlobalStyles from "@components/core/GlobalStyles.astro"
+import MainNavigation from "@components/MainNavigation.astro"
+---
+
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <!-- <MetaTags />
+            <GoogleScripts /> -->
+        <GlobalStyles />
+        <ViewTransitions />
+    </head>
+    <body>
+        <header class="container">
+            <MainNavigation />
+        </header>
+        <main class="container">
+            <slot />
+        </main>
+        <footer></footer>
+    </body>
+</html>

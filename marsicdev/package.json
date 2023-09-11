@@ -1,0 +1,27 @@
+{
+    "name": "marsicdev",
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "astro": "astro",
+        "build": "astro check && tsc --noEmit && astro build",
+        "dev": "astro dev",
+        "preview": "astro preview",
+        "start": "astro dev",
+        "reset": "rm -rf node_modules && yarn",
+        "format": "prettier --check .",
+        "format:fix": "prettier --write ."
+    },
+    "dependencies": {
+        "@astrojs/check": "^0.2.0",
+        "@fontsource-variable/montserrat": "^5.0.9",
+        "@picocss/pico": "^1.5.10",
+        "astro": "^3.0.12"
+    },
+    "devDependencies": {
+        "@hypetech/prettier-config": "^1.0.1",
+        "prettier": "^3.0.3",
+        "prettier-plugin-astro": "^0.12.0",
+        "typescript": "^5.2.2"
+    }
+}
