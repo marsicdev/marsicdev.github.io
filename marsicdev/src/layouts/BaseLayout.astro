@@ -2,6 +2,7 @@
 // Supports weights 100-900
 import "@fontsource-variable/montserrat"
 import "@picocss/pico"
+import "../styles/pico-bootstrap-grid.css"
 
 import { ViewTransitions } from "astro:transitions"
 
@@ -14,18 +15,24 @@ import MainNavigation from "@components/MainNavigation.astro"
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.33.0/tabler-icons.min.css" />
+
         <!-- <MetaTags />
             <GoogleScripts /> -->
         <GlobalStyles />
         <ViewTransitions />
     </head>
     <body>
-        <header class="container">
+        <header class="container" style="padding: 2rem 0 !important;">
             <MainNavigation />
         </header>
         <main class="container">
             <slot />
         </main>
-        <footer></footer>
+        <!-- <footer class="center" style="bottom: 0 !important;">
+            <p>
+                marsic.dev &copy; {new Date().getFullYear()}
+            </p>
+        </footer> -->
     </body>
 </html>

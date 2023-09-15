@@ -1,0 +1,22 @@
+---
+import Heading from "@components/ui/Heading.astro"
+import BaseLayout from "@layouts/BaseLayout.astro"
+import { getEntry } from "astro:content"
+
+const aboutEntry = await getEntry("info", "about")
+const { Content } = await aboutEntry.render()
+---
+
+<BaseLayout>
+    <main>
+        <Heading title="About me" subtitle="A polyglot developer deeply interested in solving complex problems." />
+        <section>
+            <Content />
+        </section>
+        <section class="center">
+            <a href="https://cal.com/marsicdev" target="_blank" role="button" style="width: 400px;"
+                >Let's work together</a
+            >
+        </section>
+    </main>
+</BaseLayout>

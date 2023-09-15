@@ -1,60 +1,53 @@
 ---
+import Heading from "@components/ui/Heading.astro"
 import BaseLayout from "@layouts/BaseLayout.astro"
 ---
 
 <BaseLayout>
-    <main>
-        <hgroup>
-            <h2>Let's work together!</h2>
-            <h3><ins>Available</ins> for freelance work</h3>
-        </hgroup>
+    <Heading title="Services">
+        <h3>Let's work together! <ins>Open</ins>/<ins>Available</ins> for work all over the world</h3>
+    </Heading>
+    <section>
+        <article>
+            <h2>Contract work</h2>
+            <p>
+                If you have a project that you want to get started, think you need my help with something or just fancy
+                saying hey let's get in touch. I'm based in Serbia, but I'm happy working remotely and have experience
+                working with teams all over the world.
+            </p>
+            <footer>
+                <strong> Price:</strong> hourly rate based on project scope and complexity
+            </footer>
+        </article>
+        <article>
+            <h2>Lectures and workshops</h2>
+            <p>
+                I have 10+ years' experience building rich mobile and web applications for clients all over the world.
+                Based on that experience I can provide lectures and workshops on the following topics: Frontend and
+                backend development, mobile development, web design, project management, team management, and
+                entrepreneurship. Check out my <a href="/talks">talks</a> to see some of my previous lectures and
+                workshops.
+            </p>
+            <footer>
+                <strong> Price:</strong> starting at 60€ depending on the topic and duration
+            </footer>
+        </article>
 
-        <p>
-            I'm currently available for freelance work. If you have a project that you want to get started, think you
-            need my help with something or just fancy saying hey let's get in touch. I'm based in Serbia, but I'm happy
-            working remotely and have experience working with teams all over the world. I'm also a member of the
-            network, a network of elite freelance software engineers and designers.
-        </p>
-
-        <h2>What I do</h2>
-        <p>
-            I have 10+ years' experience building rich mobile and web applications for clients all over the world. Below
-            is a quick overview of my main technical skill sets and tools I use. Want to find out more about my
-            experience? Check out my online resume and project portfolio.
-        </p>
-        <section>
-            <article>
-                <h2>Developer mentoring</h2>
-                <p>
-                    I'm a big fan of mentoring and giving back to the developer community. I'm currently mentoring
-                    junior developers at the open source community.
-                </p>
-                <footer>
-                    <strong> Price:</strong> starting at $1000
-                </footer>
-            </article>
-            <article>
-                <h2>Lectures and workshops</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero recusandae consequatur sunt cupiditate
-                    voluptatum repellendus voluptas explicabo temporibus, sed incidunt itaque obcaecati ab accusamus
-                    cumque rerum, quam, facilis odio quas?
-                </p>
-                <footer>
-                    <strong> Price:</strong> starting at $1000
-                </footer>
-            </article>
-            <article>
-                <h2>Contract work</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vel labore laboriosam pariatur ex,
-                    magni nemo amet quos dolores neque sequi perferendis ratione, quam odit fugit nihil quasi vero
-                    laudantium!
-                </p>
-                <footer>
-                    <strong> Price:</strong> starting at $1000
-                </footer>
-            </article>
-        </section>
-    </main>
+        <!-- <article>
+            <h2>Developer mentoring</h2>
+            <p>
+                I'm a big fan of mentoring and giving back to the developer community. I'm currently mentoring junior
+                developers at the open source community.
+            </p>
+            <footer>
+                <strong> Price:</strong> starting at $1000
+            </footer>
+        </article> -->
+    </section>
 </BaseLayout>
+
+<style>
+    article {
+        margin: 1rem !important;
+    }
+</style>

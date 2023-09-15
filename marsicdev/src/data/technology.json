@@ -1,0 +1,186 @@
+[
+    {
+        "name": "TypeScript",
+        "group": "Primary",
+        "category": "Frontend",
+        "description": "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.",
+        "url": "https://www.typescriptlang.org/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/typescript.svg"
+    },
+    {
+        "name": "JavaScript",
+        "group": "Primary",
+        "category": "Frontend",
+        "description": "JavaScript is a lightweight, interpreted programming language.",
+        "url": "https://www.javascript.com/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/javascript.svg"
+    },
+    {
+        "name": "React",
+        "group": "Primary",
+        "category": "Frontend",
+        "description": "React is a JavaScript library for building user interfaces.",
+        "url": "https://reactjs.org/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/react_ts.svg"
+    },
+    {
+        "name": "ReactNative",
+        "group": "Primary",
+        "category": "Mobile",
+        "description": "ReactNative is a JavaScript framework for writing real, natively rendering mobile applications for iOS and Android.",
+        "url": "https://reactnative.dev/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/react.svg"
+    },
+    {
+        "name": "Next.js",
+        "group": "Primary",
+        "category": "Frontend",
+        "description": "Next.js is a React framework for production.",
+        "url": "https://nextjs.org/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/next.svg"
+    },
+    {
+        "name": "Astro",
+        "group": "Primary",
+        "category": "Frontend",
+        "description": "Astro is a new kind of static site builder. Astro combines decades of proven performance best practices with the DX improvements of the component-oriented era.",
+        "url": "https://astro.build/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/astro.svg"
+    },
+    {
+        "name": "GraphQL",
+        "group": "Primary",
+        "category": "Frontend",
+        "description": "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.",
+        "url": "https://graphql.org/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/graphql.svg"
+    },
+    {
+        "name": "Apollo",
+        "group": "Library",
+        "category": "Frontend",
+        "description": "Apollo is a set of tools that empower developers to build client applications that interact with GraphQL servers.",
+        "url": "https://www.apollographql.com/",
+        "logo": "https://www.apollographql.com/favicon.ico"
+    },
+    {
+        "name": "Material-UI",
+        "group": "Library",
+        "category": "Frontend",
+        "description": "Material-UI is a simple and customizable component library to build faster, beautiful, and more accessible React applications.",
+        "url": "https://material-ui.com/",
+        "logo": "https://material-ui.com/static/favicon.ico"
+    },
+    {
+        "name": "Styled Components",
+        "group": "Library",
+        "category": "Frontend",
+        "description": "Styled Components is a CSS-in-JS library that enables developers to write each component with their own styles.",
+        "url": "https://styled-components.com/",
+        "logo": "https://styled-components.com/favicon.ico"
+    },
+    {
+        "name": "Storybook",
+        "group": "Primary",
+        "category": "Frontend",
+        "description": "Storybook is an open source tool for developing UI components in isolation for React, Vue, and Angular.",
+        "url": "https://storybook.js.org/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/storybook.svg"
+    },
+    {
+        "name": "Node.js",
+        "group": "Secondary",
+        "category": "Backend",
+        "description": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+        "url": "https://nodejs.org/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/nodejs.svg"
+    },
+    {
+        "name": "MongoDB",
+        "group": "Secondary",
+        "category": "Backend",
+        "description": "MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.",
+        "url": "https://www.mongodb.com/",
+        "logo": "https://www.mongodb.com/assets/images/global/favicon.ico"
+    },
+    {
+        "name": "Jest",
+        "group": "Secondary",
+        "category": "Testing",
+        "description": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity.",
+        "url": "https://jestjs.io/",
+        "logo": "https://jestjs.io/img/favicon/favicon.ico"
+    },
+    {
+        "name": "Playwright",
+        "group": "Secondary",
+        "category": "Testing",
+        "description": "Playwright is a Node library to automate Chromium, Firefox and WebKit with a single API.",
+        "url": "https://playwright.dev/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/playwright.svg"
+    },
+    {
+        "name": "React Hook Form",
+        "group": "Secondary",
+        "category": "Frontend",
+        "description": "React Hook Form is a performant, flexible and extensible forms with easy-to-use validation.",
+        "url": "https://react-hook-form.com/",
+        "logo": "https://react-hook-form.com/favicon.ico"
+    },
+    {
+        "name": "Visual Studio Code",
+        "group": "Tools",
+        "category": "Frontend",
+        "description": "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.",
+        "url": "https://code.visualstudio.com/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/vscode.svg"
+    },
+    {
+        "name": "Git",
+        "group": "Tools",
+        "category": "Frontend",
+        "description": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
+        "url": "https://git-scm.com/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/git.svg"
+    },
+    {
+        "name": "GitHub",
+        "group": "Tools",
+        "category": "Frontend",
+        "description": "GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside 50 million developers.",
+        "url": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/github.svg",
+        "logo": "https://www.svgrepo.com/show/353783/github-octocat.svg"
+    },
+    {
+        "name": "Postman",
+        "group": "Tools",
+        "category": "Frontend",
+        "description": "Postman is a collaboration platform for API development.",
+        "url": "https://www.postman.com/",
+        "logo": "https://www.svgrepo.com/show/354202/postman-icon.svg"
+    },
+    {
+        "name": "Prettier",
+        "group": "Tools",
+        "category": "Frontend",
+        "description": "Prettier is an opinionated code formatter.",
+        "url": "https://prettier.io/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/prettier.svg"
+    },
+    {
+        "name": "ESLint",
+        "group": "Tools",
+        "category": "Frontend",
+        "description": "ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.",
+        "url": "https://eslint.org/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/eslint.svg"
+    },
+    {
+        "name": "Figma",
+        "group": "Tools",
+        "category": "Frontend",
+        "description": "Figma is a vector graphics editor and prototyping tool which is primarily web-based.",
+        "url": "https://www.figma.com/",
+        "logo": "https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/figma.svg"
+    }
+]

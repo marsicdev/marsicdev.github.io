@@ -5,14 +5,20 @@ import { Image } from "astro:assets"
 <nav>
     <ul>
         <li>
-            <a href="/"><code>marsic.dev</code></a>
+            <a href="/">
+                <Image width="200" height="25" src="/assets/mdev-logo1.png" alt="" />
+            </a>
         </li>
     </ul>
     <ul>
-        <li><a href="/about">About Me</a></li>
+        <li><a href="/about">About</a></li>
         <li><a href="/services">Services</a></li>
-        <li><a href="/projects">Projects</a></li>
+        <!-- <li><a href="/projects">Projects</a></li> -->
         <li><a href="/talks">Talks</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li>
+            <a href="/contact" data-tooltip="Contact">
+                <i class="ti ti-mail"></i>
+            </a>
+        </li>
     </ul>
 </nav>

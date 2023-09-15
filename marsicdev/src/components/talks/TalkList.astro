@@ -12,7 +12,7 @@ const { talks, grid = false } = Astro.props
 
 <section>
     {
-        talks.map((talk, index, items) => {
+        talks.reverse().map((talk, index, items) => {
             if (!grid) {
                 return <TalkItem talk={talk} />
             }

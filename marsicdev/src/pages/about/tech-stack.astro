@@ -1,0 +1,96 @@
+---
+import technology from "@data/technology.json"
+
+import BaseLayout from "@layouts/BaseLayout.astro"
+
+import Heading from "@components/ui/Heading.astro"
+
+const primary = technology.filter((item) => item.group.toLowerCase() === "primary")
+const secondary = technology.filter((item) => item.group.toLowerCase() === "secondary")
+const tools = technology.filter((item) => item.group.toLowerCase() === "tools")
+---
+
+<BaseLayout>
+    <section>
+        <a href="/about">Go back</a>
+        <Heading title="Primary stack">
+            <p>Technologies for a long time and I feel very comfortable with them.</p>
+        </Heading>
+        <article class="grid">
+            {
+                primary.map((item) => (
+                    <figure style="text-align:center;">
+                        <img src={item.logo} alt={item.name} />
+                        <figcaption>{item.name}</figcaption>
+                    </figure>
+                ))
+            }
+        </article>
+        <hr />
+        <section>
+            <Heading level="2" title="Secondary stack">
+                <p>
+                    I have been working with these technologies for a long time and I feel very comfortable with them.
+                </p>
+            </Heading>
+            <div class="grid">
+                <figure style="text-align:center;">
+                    <img src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/android.svg" alt="" />
+                    <figcaption>Android</figcaption>
+                </figure>
+                <figure style="text-align:center;">
+                    <img src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/kotlin.svg" alt="" />
+                    <figcaption>Kotlin</figcaption>
+                </figure>
+                <figure style="text-align:center;">
+                    <img
+                        src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/folder-ios.svg"
+                        alt=""
+                    />
+                    <figcaption>iOS</figcaption>
+                </figure>
+                <figure style="text-align:center;">
+                    <img src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/swift.svg" alt="" />
+                    <figcaption>Swift</figcaption>
+                </figure>
+                <figure style="text-align:center;">
+                    <img src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/dart.svg" alt="" />
+                    <figcaption>Dart</figcaption>
+                </figure>
+                <figure style="text-align:center;">
+                    <img src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/graphql.svg" alt="" />
+                    <figcaption>GraphQL</figcaption>
+                </figure>
+                <figure style="text-align:center;">
+                    <img
+                        src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/folder-expo.svg"
+                        alt=""
+                    />
+                    <figcaption>VSCode</figcaption>
+                </figure>
+                <figure style="text-align:center;">
+                    <img src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/git.svg" alt="" />
+                    <figcaption>Git</figcaption>
+                </figure>
+            </div>
+        </section>
+        <hr />
+        <section>
+            <Heading title="Tools">
+                <p>
+                    I have been working with these technologies for a long time and I feel very comfortable with them.
+                </p>
+            </Heading>
+            <div class="grid">
+                {
+                    tools.map((item) => (
+                        <figure style="text-align:center;">
+                            <img src={item.logo} alt={item.name} />
+                            <figcaption>{item.name}</figcaption>
+                        </figure>
+                    ))
+                }
+            </div>
+        </section>
+    </section>
+</BaseLayout>

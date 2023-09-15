@@ -1,0 +1,17 @@
+---
+type Props = {
+    title: string
+    level?: "1" | "2" | "3" | "4" | "5" | "6"
+    subtitle?: string
+}
+
+const { title, subtitle, level = "1" } = Astro.props
+
+const Tag = `h${level}`
+---
+
+<hgroup>
+    <Tag>{title}</Tag>
+    {subtitle ? <h3>{subtitle}</h3> : null}
+    <slot />
+</hgroup>

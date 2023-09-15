@@ -1,90 +1,21 @@
 ---
-import { Image } from "astro:assets"
-
 import SocialBar from "@components/core/SocialBar.astro"
+import Quote from "@components/ui/Quote.astro"
 import BaseLayout from "@layouts/BaseLayout.astro"
+
+import { getEntry } from "astro:content"
+
+const aboutEntry = await getEntry("info", "profile")
+const { Content } = await aboutEntry.render()
 ---
 
 <BaseLayout>
-    <main>
-        <>
-            <div class="row" style="margin: 0px;">
-                <div style="flex: 1;">
-                    <Image
-                        width="280"
-                        height="300"
-                        src="/assets/marko-small.png"
-                        alt="Marko Arsić profile picture"
-                        style="border-radius: 25%; transform: rotate(3deg);"
-                    />
-                </div>
-                <div style="flex: 2; flex-grow: 2;">
-                    <div>
-                        <small>Hi / Zdravo / Welcome I'm</small>
-                        <h1 style="margin: 0px;">Marko Arsić <span data-tooltip="Republic of Serbia">🇷🇸</span></h1>
-                        <div style="font-size: 26px; color: #94A3B8">
-                            Software Engineer &nbsp;/&nbsp; Lecturer &nbsp;/&nbsp; Indie Consultant
-                        </div>
-                        <small> 🤖 He/him &nbsp; 📍 Belgrade, Serbia &nbsp; 🗣 Serbian, English, Portuguese</small>
-                    </div>
-                    <br />
-                    <section class="grid">
-                        <a href="#" role="button" class="contrast outline">🫱🏻‍🫲🏽 Mentoring</a>
-                        <a href="#" role="button" class="contrast outline">Consulting</a>
-                        <a href="#" role="button" class="contrast outline">👨🏻‍🏫 Workshops</a>
-                    </section>
-                </div>
-            </div>
-            <blockquote style="line-height: 1.8rem; font-size: 1.2rem; text-align: justify;">
-                I'm actively engaged in developing software solutions for the last 10+ years. Although I use a wide
-                variety of technologies, my focus and expertise are web and mobile applications and for the last four
-                years mostly React and React Native software packages. I like to say that my expertise is based on a
-                combination of two things - a deep understanding of technology and experience on how it works in
-                reality.
-            </blockquote>
-            <section><SocialBar /></section>
-        </>
-        <hr /><br />
-        <section>
-            <h3>Tech stack</h3>
-            <div class="grid">
-                <figure style="text-align:center;">
-                    <img src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/react_ts.svg" alt="" />
-                    <figcaption>React</figcaption>
-                </figure>
-                <figure style="text-align:center;">
-                    <img src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/next.svg" alt="" />
-                    <figcaption>Next.js</figcaption>
-                </figure>
-                <img src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/astro.svg" alt="" />
-                <img src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/graphql.svg" alt="" />
-                <img src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/vscode.svg" alt="" />
-                <img src="https://github.com/PKief/vscode-material-icon-theme/raw/main/icons/git.svg" alt="" />
-            </div>
-            <a href="/posts">See full stack</a>
-        </section>
-        <hr /><br />
-        <section class="grid">
-            <div>
-                <h3>Latest articles</h3>
-                <ul>
-                    <li>Aliquam lobortis lacus eu libero ornare facilisis.</li>
-                    <li>Nam et magna at libero scelerisque egestas.</li>
-                    <li>Suspendisse id nisl ut leo finibus vehicula quis eu ex.</li>
-                    <li>Proin ultricies turpis et volutpat vehicula.</li>
-                </ul>
-                <a href="/posts">See all articles</a>
-            </div>
-            <div>
-                <h3>Current projects</h3>
-                <ul>
-                    <li>Aliquam lobortis lacus eu libero ornare facilisis.</li>
-                    <li>Nam et magna at libero scelerisque egestas.</li>
-                    <li>Suspendisse id nisl ut leo finibus vehicula quis eu ex.</li>
-                    <li>Proin ultricies turpis et volutpat vehicula.</li>
-                </ul>
-                <a href="/projects">See all projects</a>
-            </div>
-        </section>
-    </main>
+    <Content />
+    <Quote>
+        I'm actively engaged in developing software solutions for the last 10+ years. Although I use a wide variety of
+        technologies, my focus and expertise are web and mobile applications and for the last four years mostly React
+        and React Native software packages. I like to say that my expertise is based on a combination of two things - a
+        deep understanding of technology and experience on how it works in reality.
+    </Quote>
+    <section><SocialBar /></section>
 </BaseLayout>

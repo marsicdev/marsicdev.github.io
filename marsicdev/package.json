@@ -16,7 +16,9 @@
         "@astrojs/check": "^0.2.0",
         "@fontsource-variable/montserrat": "^5.0.9",
         "@picocss/pico": "^1.5.10",
-        "astro": "^3.0.12"
+        "@tabler/icons-webfont": "^2.34.0",
+        "astro": "^3.0.12",
+        "rehype-external-links": "^3.0.0"
     },
     "devDependencies": {
         "@hypetech/prettier-config": "^1.0.1",

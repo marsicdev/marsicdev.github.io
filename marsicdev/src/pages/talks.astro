@@ -1,14 +1,54 @@
 ---
+import SubstackSubscribe from "@components/SubstackSubscribe.astro"
 import TalkList from "@components/talks/TalkList.astro"
+import Quote from "@components/ui/Quote.astro"
 import BaseLayout from "@layouts/BaseLayout.astro"
+import { Image } from "astro:assets"
 import { getCollection } from "astro:content"
 
 const talks = await getCollection("talks")
 ---
 
 <BaseLayout>
-    <main>
+    <hgroup>
         <h1>Talks</h1>
-        <TalkList talks={talks} grid />
-    </main>
+        <h2>Coding, learning, & leveling up one day at a time.</h2>
+    </hgroup>
+    <section class="grid">
+        <img src="/assets/speaker-img.jpg" alt="Talks" style="border-radius: 5%; transform: rotate(0deg);" />
+        <div>
+            <Quote>
+                I love to share what I've learned with others. I've been fortunate enough to speak at a number of
+                conferences and meetups over the years. Here are some of talks I've given.
+                <footer>
+                    <cite>- Marko Arsić</cite>
+                </footer>
+            </Quote>
+        </div>
+    </section>
+    <br />
+    <br />
+    <div class="grid">
+        <p>
+            To stay up to date and for upcoming tech talks, lectures, master classes, and workshops, check out
+            <a href="https://education.hypetech.io" target="_blank">HypeTech Education</a> site. Most of the talks are
+            free and open to the public. If you are interested in having me speak at your event, please reach out to me
+            on <a href="https://twitter.com/marsic" target="_blank">X</a>.
+        </p>
+        <figure style="text-align: center;">
+            <a href="https://meetup.com/hype-tech">
+                <Image width="350" height="80" src="/assets/hte-logo-text-dark.png" alt="Talks" />
+            </a>
+            <figcaption>Check out for more talks to see what we do</figcaption>
+        </figure>
+    </div>
+    <h3>Past Conference Talks</h3>
+    <TalkList talks={talks} />
 </BaseLayout>
+
+<style>
+    article,
+    h2 {
+        padding: 0px !important;
+    }
+</style>

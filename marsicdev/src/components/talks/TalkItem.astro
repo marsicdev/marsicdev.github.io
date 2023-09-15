@@ -1,4 +1,5 @@
 ---
+import Quote from "@components/ui/Quote.astro"
 import type { CollectionEntry } from "astro:content"
 
 type Props = {
@@ -6,15 +7,22 @@ type Props = {
 }
 
 const { talk } = Astro.props
-const { title, summary, date } = talk.data
+const { title, summary, date, location, slidesUrl, sourceUrl, youTubeId, event, eventUrl } = talk.data
 ---
 
 <article style="margin: 0.5rem 0px;">
-    <h2>
+    <h2 style="margin: 0.5rem 0px;">
         {title}
     </h2>
-    <p>{summary}</p>
-    <footer>
-        <small>{date}</small>
-    </footer>
+    <Quote>{summary}</Quote>
+    <small>
+        📍 <a href={eventUrl}>{event}, {location}</a> · 🗓️ {date} · 🎞️ <a href={slidesUrl} target="_blank">Slides</a> ·
+        {
+            youTubeId && (
+                <a href={youTubeId} target="_blank">
+                    📺 Video
+                </a>
+            )
+        }
+    </small>
 </article>
