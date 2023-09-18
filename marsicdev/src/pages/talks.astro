@@ -1,5 +1,4 @@
 ---
-import SubstackSubscribe from "@components/SubstackSubscribe.astro"
 import TalkList from "@components/talks/TalkList.astro"
 import Quote from "@components/ui/Quote.astro"
 import BaseLayout from "@layouts/BaseLayout.astro"
@@ -37,12 +36,19 @@ const talks = await getCollection("talks")
         </p>
         <figure style="text-align: center;">
             <a href="https://meetup.com/hype-tech">
-                <Image width="350" height="80" src="/assets/hte-logo-text-dark.png" alt="Talks" />
+                <Image width="350" height="50" src="/assets/hte-logo-text-dark.png" alt="Talks" />
             </a>
-            <figcaption>Check out for more talks to see what we do</figcaption>
+            <figcaption>crafted by industry standards</figcaption>
         </figure>
     </div>
-    <h3>Past Conference Talks</h3>
+    <h3>Meetups</h3>
+    <a href="https://meetup.com/hype-tech"
+        >See past and upcoming meetup talks
+        <span style="font-size: 1.5rem; margin-left: 0.5rem;">&#8594;</span>
+    </a>
+    <hr />
+    <br />
+    <h3>Conference Talks</h3>
     <TalkList talks={talks} />
 </BaseLayout>
 

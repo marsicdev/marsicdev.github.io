@@ -13,10 +13,9 @@ export const talksSchema = z.object({
 })
 
 export const projectsSchema = z.object({
+    name: z.string(),
     title: z.string(),
     summary: z.string(),
-    status: z.string(),
-    date: z.string(),
     website: z.string().url(),
 })
 

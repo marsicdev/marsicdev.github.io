@@ -24,9 +24,9 @@ description: About me
         </div>
         <br />
         <section class="grid">
-            <a href="#" role="button" class="contrast outline">🫱🏻‍🫲🏽 Mentoring</a>
-            <a href="#" role="button" class="contrast outline">Consulting</a>
-            <a href="#" role="button" class="contrast">👨🏻‍🏫 Workshops</a>
+            <!-- <a href="/services" role="button" class="contrast outline">🫱🏻‍🫲🏽 Mentoring</a> -->
+            <a href="/services" role="button" class="contrast outline">Consulting</a>
+            <a href="/services" role="button" class="contrast">👨🏻‍🏫 Workshops</a>
         </section>
     </div>
 </article>
