@@ -11,13 +11,18 @@ function gtag() {
 </script>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-794ZV2HQFT"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G2XHX8RVHK"></script>
 
 <script is:inline define:vars={{ trackingId }}>
 window.dataLayer = window.dataLayer || []
+
 function gtag() {
     dataLayer.push(arguments)
 }
-gtag('js', new Date())
-gtag('config', trackingId)
+
+gtag("js", new Date())
+gtag("config", trackingId)
 </script>
+
+<!-- Plausable analytics -->
+<script defer data-domain="marsic.dev" src="https://analytics.hypetech.dev/js/script.js"></script>

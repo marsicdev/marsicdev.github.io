@@ -8,6 +8,7 @@ import { ViewTransitions } from "astro:transitions"
 
 import GlobalStyles from "@components/core/GlobalStyles.astro"
 import MainNavigation from "@components/MainNavigation.astro"
+import GlobalMeta from "@components/core/GlobalMeta.astro"
 ---
 
 <html lang="en" data-theme="dark">
@@ -16,9 +17,8 @@ import MainNavigation from "@components/MainNavigation.astro"
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.33.0/tabler-icons.min.css" />
-
-        <!-- <MetaTags />
-            <GoogleScripts /> -->
+        <GlobalMeta />
+        <GlobalStyles />
         <GlobalStyles />
         <ViewTransitions />
     </head>
