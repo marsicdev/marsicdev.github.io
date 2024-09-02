@@ -8,9 +8,9 @@ description: About me
         <Image
             width="280"
             height="300"
-            src="/assets/marko-small.png"
+            src="/assets/marsicdev-profile.jpg"
             alt="Marko Arsić profile picture"
-            style="border-radius: 25%; transform: rotate(3deg);"
+            style="border-radius: 25%; "
         />
     </div>
     <div class="col-sm-6 col-md-8 col-lg-9 col-xl-9">

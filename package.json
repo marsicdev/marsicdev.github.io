@@ -14,17 +14,18 @@
         "format:fix": "prettier --write ."
     },
     "dependencies": {
-        "@astrojs/check": "^0.2.0",
-        "@fontsource-variable/montserrat": "^5.0.9",
-        "@picocss/pico": "^1.5.10",
-        "@tabler/icons-webfont": "^2.34.0",
-        "astro": "^3.1.1",
+        "@astrojs/check": "^0.9.3",
+        "@fontsource-variable/montserrat": "^5.0.20",
+        "@picocss/pico": "^2.0.6",
+        "@tabler/icons-webfont": "^3.14.0",
+        "astro": "^4.15.2",
         "rehype-external-links": "^3.0.0"
     },
     "devDependencies": {
         "@hypetech/prettier-config": "^1.0.1",
-        "prettier": "^3.0.3",
-        "prettier-plugin-astro": "^0.12.0",
-        "typescript": "^5.2.2"
-    }
+        "prettier": "^3.3.3",
+        "prettier-plugin-astro": "^0.14.1",
+        "typescript": "^5.5.4"
+    },
+    "packageManager": "yarn@1.22.22"
 }
