@@ -1,0 +1,70 @@
+---
+// Hero section with photo ring and intro
+---
+
+<section class="snap-section hero-section items-center text-center px-6 relative overflow-hidden">
+  <div class="geo-triangle triangle-lg top-[15%] left-[10%] animate-rotate-float"></div>
+  <div class="geo-triangle triangle-md top-[25%] right-[15%] animate-drift-rotate"></div>
+  <div class="shape w-[400px] h-[400px] -top-48 -left-48 animate-spin-slow opacity-25 rounded-full"></div>
+
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/90 dark:to-black/90 pointer-events-none"></div>
+
+  <div class="z-10 max-w-5xl mx-auto space-y-10">
+    <!-- Photo with gradient ring -->
+    <div class="flex justify-center">
+      <div class="photo-ring relative w-32 h-32 md:w-40 md:h-40 rounded-full p-[3px] flex-shrink-0">
+        <div class="w-full h-full rounded-full overflow-hidden">
+          <img src="/marsicdev-profile.jpg" alt="Marko Arsić" class="w-full h-full object-cover rounded-full" />
+        </div>
+      </div>
+    </div>
+
+    <span class="inline-block py-2.5 px-6 rounded-full accent-gradient-bg text-white text-xs font-medium tracking-[0.2em] uppercase">
+      Software & AI Consultant
+    </span>
+    <h1 class="text-5xl md:text-8xl lg:text-[10rem] font-extralight tracking-tighter leading-[0.9]">
+      Marko <span class="font-black accent-gradient">Arsić</span>
+    </h1>
+    <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed font-light">
+      I help companies build software, design architecture,
+      <br class="hidden md:block" />
+      and transform to <span class="accent-gradient font-semibold">AI-first development</span>.
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-5 text-base text-gray-500 dark:text-gray-500">
+      <span>Founder of <a href="https://hypetech.io" class="accent-gradient font-medium hover:opacity-80 transition-opacity">hypetech.io</a></span>
+      <span class="w-1 h-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+      <span>Belgrade, Serbia</span>
+      <span class="w-1 h-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+      <span>Working globally</span>
+    </div>
+    <div class="pt-8">
+      <svg class="w-6 h-6 mx-auto animate-bounce text-gray-300 dark:text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </div>
+</section>
+
+<style>
+  .accent-gradient {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .accent-gradient-bg {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899, #f59e0b);
+  }
+
+  .photo-ring {
+    background: conic-gradient(from 0deg, #8b5cf6, #ec4899, #f59e0b, #8b5cf6);
+    animation: ring-spin 8s linear infinite;
+  }
+
+  @keyframes ring-spin {
+    to {
+      background: conic-gradient(from 360deg, #8b5cf6, #ec4899, #f59e0b, #8b5cf6);
+    }
+  }
+</style>

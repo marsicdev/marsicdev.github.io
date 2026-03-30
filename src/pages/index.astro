@@ -1,21 +1,115 @@
 ---
-import SocialBar from "@components/core/SocialBar.astro"
-import Quote from "@components/ui/Quote.astro"
-import BaseLayout from "@layouts/BaseLayout.astro"
+import Layout from "@/layouts/Layout.astro";
+import Nav from "@/components/marsic/Nav.astro";
+import Hero from "@/components/marsic/Hero.astro";
+import AIFocus from "@/components/marsic/AIFocus.astro";
+import About from "@/components/marsic/About.astro";
+import Services from "@/components/marsic/Services.astro";
+import Courses from "@/components/marsic/Courses.astro";
+import Connect from "@/components/marsic/Connect.astro";
+import Footer from "@/components/marsic/Footer.astro";
 
-import { getEntry } from "astro:content"
-
-const aboutEntry = await getEntry("info", "profile")
-const { Content } = await aboutEntry.render()
+const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    mainEntity: {
+        "@type": "Person",
+        name: "Marko Arsić",
+        alternateName: "marsicdev",
+        jobTitle: "Independent Software Consultant & AI Advisor",
+        description:
+            "Independent software consultant with 10+ years of experience. Specializing in AI agents, LLM workflows, software architecture, and helping companies transform to AI-first development.",
+        url: "https://marsic.dev",
+        sameAs: [
+            "https://linkedin.com/in/marsicdev",
+            "https://github.com/marsicdev",
+            "https://x.com/mArsic",
+            "https://instagram.com/marsic.dev",
+        ],
+        worksFor: {
+            "@type": "Organization",
+            name: "hypetech.io",
+            url: "https://hypetech.io",
+        },
+        knowsAbout: [
+            "AI Agents",
+            "LLM Workflows",
+            "RAG Applications",
+            "AI-Assisted Development",
+            "Software Architecture",
+            "Full-Stack Development",
+            "System Design",
+            "Technical Consulting",
+            "React",
+            "TypeScript",
+            "Node.js",
+            "Python",
+        ],
+        address: {
+            "@type": "PostalAddress",
+            addressLocality: "Belgrade",
+            addressCountry: "RS",
+        },
+    },
+};
 ---
 
-<BaseLayout>
-    <Content />
-    <Quote>
-        I'm actively engaged in developing software solutions for the last 10+ years. Although I use a wide variety of
-        technologies, my focus and expertise are web and mobile applications and for the last four years mostly React
-        and React Native software packages. I like to say that my expertise is based on a combination of two things - a
-        deep understanding of technology and experience on how it works in reality.
-    </Quote>
-    <section><SocialBar /></section>
-</BaseLayout>
+<Layout
+  title="Marko Arsić | Independent Software & AI Consultant"
+  description="Marko Arsić — Independent software consultant specializing in AI agents, LLM workflows, software architecture, and full-stack engineering. Founder of hypetech.io. 10+ years of experience."
+  structuredData={personSchema}
+  snapScroll
+>
+  <Nav />
+
+  <div class="snap-container">
+    <Hero />
+    <AIFocus />
+    <About />
+    <Services />
+    <Courses />
+    <Connect />
+    <Footer />
+  </div>
+</Layout>
+
+<style>
+  /* Mobile snap scroll fix */
+  @media (max-width: 767px) {
+    .snap-container {
+      scroll-snap-type: y proximity;
+    }
+    .snap-container :global(.snap-section) {
+      min-height: auto;
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+    }
+    .snap-container :global(.snap-section.hero-section) {
+      min-height: 100vh;
+      min-height: 100dvh;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+</style>
+
+<script>
+  // Scroll-triggered fade-in
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    }
+  );
+
+  document.querySelectorAll(".fade-in-up").forEach((el) => {
+    observer.observe(el);
+  });
+</script>

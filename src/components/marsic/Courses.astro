@@ -1,0 +1,254 @@
+---
+const courses = [
+    {
+        title: "AI-Assisted Development with Claude Code",
+        tag: "AI",
+        description: "Master AI-powered development using Claude Code as your pair programmer. Learn prompt engineering for code generation, architectural planning with AI, automated testing, debugging workflows, and how to 10x your productivity while maintaining code quality. Covers real-world project patterns, context management, and building custom workflows.",
+    },
+    {
+        title: "AI-Assisted Development with GitHub Copilot",
+        tag: "AI",
+        description: "Unlock the full potential of GitHub Copilot beyond basic autocomplete. Learn workspace agents, multi-file editing, slash commands, test generation, and advanced prompt techniques. Covers Copilot Chat, Copilot CLI, and how to integrate AI assistance into every stage of your development workflow — from planning to deployment.",
+    },
+    {
+        title: "Docker & Kubernetes in Practice",
+        tag: "DevOps",
+        description: "From containers to orchestration — a hands-on deep dive. Learn Docker fundamentals, multi-stage builds, Docker Compose for local development, then graduate to Kubernetes with deployments, services, ingress, config maps, secrets, and Helm charts. Includes CI/CD pipeline integration and production best practices.",
+    },
+    {
+        title: "Using AI to Boost Productivity for Solution Architects",
+        tag: "AI",
+        description: "A workshop designed for solution architects and tech leads. Learn how to use AI tools for system design documentation, architecture decision records, diagram generation, RFC drafting, and technical specification writing. Covers using LLMs for threat modeling, capacity planning, and evaluating technology trade-offs faster.",
+    },
+    {
+        title: "Advanced TypeScript",
+        tag: "Engineering",
+        description: "Go beyond the basics into TypeScript's powerful type system. Covers generics, conditional types, mapped types, template literal types, type guards, discriminated unions, declaration merging, and module augmentation. Learn patterns for building type-safe APIs, libraries, and large-scale applications with confidence.",
+    },
+    {
+        title: "Modern React Architecture",
+        tag: "Engineering",
+        description: "Build scalable React applications the right way. Covers Server Components, the App Router, data fetching patterns, state management strategies, component composition, performance optimization, and testing architecture. Includes real-world patterns for large codebases and team collaboration.",
+    },
+];
+---
+
+<section id="courses" class="snap-section items-center px-6 md:px-12 bg-gray-50 dark:bg-[#030303] relative overflow-hidden border-b border-black/10 dark:border-white/5">
+  <div class="geo-triangle triangle-md top-[15%] left-[8%] animate-float-slow"></div>
+  <div class="geo-square w-10 h-10 bottom-[20%] right-[10%] animate-drift-rotate"></div>
+  <div class="shape w-[400px] h-[400px] -bottom-48 -right-48 animate-spin-slow opacity-10 rounded-full"></div>
+
+  <div class="max-w-6xl mx-auto relative z-10 w-full">
+    <div class="max-w-3xl mb-16">
+      <span class="text-sm font-medium text-gray-500 dark:text-gray-500 uppercase tracking-[0.25em]">Education</span>
+      <h2 class="text-5xl md:text-6xl lg:text-7xl font-extralight mt-6 tracking-tight">
+        Courses & <span class="font-black accent-gradient">workshops</span>
+      </h2>
+      <p class="text-gray-600 dark:text-gray-400 text-xl mt-8 leading-[1.7]">
+        Hands-on training for engineering teams. Click any course to learn more.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {courses.map((course, index) => (
+        <button
+          class={`course-trigger fade-in-up fade-in-up-delay-${(index % 4) + 1} group text-left w-full p-8 md:p-10 border border-gray-200 dark:border-white/10 bg-white dark:bg-white/[0.02] hover:bg-gray-50 dark:hover:bg-white/5 accent-glow transition-all duration-300 cursor-pointer`}
+          data-title={course.title}
+          data-tag={course.tag}
+          data-description={course.description}
+        >
+          <div class="flex items-start justify-between gap-4">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="inline-block px-3 py-1 text-xs font-medium uppercase tracking-wider rounded-full accent-gradient-bg text-white flex-shrink-0">
+                  {course.tag}
+                </span>
+              </div>
+              <h3 class="text-xl md:text-2xl font-medium text-gray-950 dark:text-white leading-tight group-hover:translate-x-0.5 transition-transform duration-300">
+                {course.title}
+              </h3>
+            </div>
+            <svg class="w-6 h-6 text-gray-300 dark:text-gray-700 group-hover:text-gray-500 dark:group-hover:text-gray-400 group-hover:translate-x-1 transition-all duration-300 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+          </div>
+        </button>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- Course Modal -->
+<div id="course-backdrop" class="course-backdrop"></div>
+<div id="course-modal" class="course-modal">
+  <button id="course-modal-close" class="course-modal-close" aria-label="Close">
+    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+  <div class="p-10 md:p-14 pt-16 md:pt-20">
+    <div id="course-modal-tag" class="inline-block px-3 py-1 text-xs font-medium uppercase tracking-wider rounded-full accent-gradient-bg text-white mb-6"></div>
+    <h3 id="course-modal-title" class="text-3xl md:text-4xl font-extralight tracking-tight text-gray-950 dark:text-white mb-8 leading-[1.15]"></h3>
+    <p id="course-modal-description" class="text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-[1.8]"></p>
+  </div>
+  <div class="border-t border-gray-200 dark:border-white/10 px-10 md:px-14 py-8">
+    <a href="https://cal.com/marsicdev" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 accent-gradient-bg text-white hover:opacity-90 px-8 py-4 rounded-lg text-base font-medium transition-all">
+      Book this workshop
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+      </svg>
+    </a>
+  </div>
+</div>
+
+<style>
+  .accent-gradient {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .accent-gradient-bg {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899, #f59e0b);
+  }
+
+  .accent-glow:hover {
+    border-color: rgba(139, 92, 246, 0.4);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.08), 0 0 40px rgba(236, 72, 153, 0.05);
+  }
+
+  :is(.dark .accent-glow:hover) {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.12), 0 0 40px rgba(236, 72, 153, 0.08);
+  }
+
+  .course-trigger {
+    appearance: none;
+    font-family: inherit;
+  }
+
+  .course-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .course-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .course-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.92);
+    z-index: 101;
+    width: 92%;
+    max-width: 720px;
+    max-height: 85vh;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  :is(.dark .course-modal) {
+    background: #050505;
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .course-modal.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .course-modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  :is(.dark .course-modal-close) {
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .course-modal-close:hover {
+    background: rgba(0, 0, 0, 0.95);
+    border-color: rgba(0, 0, 0, 0.95);
+  }
+
+  .course-modal-close:hover svg {
+    stroke: white;
+  }
+
+  :is(.dark .course-modal-close:hover) {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(255, 255, 255, 0.95);
+  }
+
+  :is(.dark .course-modal-close:hover svg) {
+    stroke: black;
+  }
+
+  .course-modal-close svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    transition: stroke 0.3s ease;
+  }
+</style>
+
+<script>
+  const courseBackdrop = document.getElementById("course-backdrop");
+  const courseModal = document.getElementById("course-modal");
+  const courseClose = document.getElementById("course-modal-close");
+  const courseTag = document.getElementById("course-modal-tag");
+  const courseTitle = document.getElementById("course-modal-title");
+  const courseDesc = document.getElementById("course-modal-description");
+
+  function openCourseModal(trigger: HTMLElement) {
+    if (courseTag) courseTag.textContent = trigger.dataset.tag || "";
+    if (courseTitle) courseTitle.textContent = trigger.dataset.title || "";
+    if (courseDesc) courseDesc.textContent = trigger.dataset.description || "";
+    courseBackdrop?.classList.add("active");
+    courseModal?.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeCourseModal() {
+    courseBackdrop?.classList.remove("active");
+    courseModal?.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll(".course-trigger").forEach((el) => {
+    el.addEventListener("click", () => openCourseModal(el as HTMLElement));
+  });
+
+  courseClose?.addEventListener("click", closeCourseModal);
+  courseBackdrop?.addEventListener("click", closeCourseModal);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeCourseModal();
+  });
+</script>

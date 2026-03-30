@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marsic.dev/sitemap-index.xml

@@ -1,26 +1,13 @@
-import { defineConfig } from "astro/config"
-import rehypeExternalLinks from "rehype-external-links"
+// @ts-check
+import { defineConfig } from 'astro/config';
+import tailwindcss from '@tailwindcss/vite';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://marsic.dev",
-    vite: {
-        ssr: {
-            noExternal: ["@picocss/pico"],
-        },
-    },
-    image: {
-        remotePatterns: [{ protocol: "https" }],
-    },
-    output: "static",
-    markdown: {
-        rehypePlugins: [
-            [
-                rehypeExternalLinks,
-                {
-                    content: { type: "text", value: " 🔗" },
-                },
-            ],
-        ],
-    },
-})
+  site: 'https://marsic.dev',
+  integrations: [sitemap()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
+});

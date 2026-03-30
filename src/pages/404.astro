@@ -1,17 +1,38 @@
 ---
-import BaseLayout from "@layouts/BaseLayout.astro"
+import Layout from "@/layouts/Layout.astro";
 ---
 
-<BaseLayout>
-    <div class="center">
-        <section class="center">
-            <img src="/assets/mdev-logo1.png" alt="Not Found" />
-        </section>
-        <hgroup style="text-align: center;">
-            <h2>Page not found</h2>
-            <h3>Sorry, but the page you were trying to view does not exist.</h3>
-        </hgroup>
-
-        <a href="/">Go home</a>
+<Layout title="404 — Page Not Found | marsic.dev" description="The page you're looking for doesn't exist." noindex={true}>
+  <section class="min-h-screen flex items-center justify-center text-center px-6">
+    <div class="max-w-xl mx-auto space-y-8">
+      <h1 class="text-8xl md:text-[10rem] font-extralight tracking-tighter leading-none">
+        4<span class="font-black accent-gradient">0</span>4
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-light">
+        This page doesn't exist. Let's get you back on track.
+      </p>
+      <a
+        href="/"
+        class="inline-flex items-center gap-3 accent-gradient-bg text-white hover:opacity-90 px-8 py-4 rounded-lg text-base font-medium transition-all"
+      >
+        <svg class="w-5 h-5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+        </svg>
+        Back to home
+      </a>
     </div>
-</BaseLayout>
+  </section>
+</Layout>
+
+<style>
+  .accent-gradient {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .accent-gradient-bg {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899, #f59e0b);
+  }
+</style>

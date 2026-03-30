@@ -1,0 +1,56 @@
+---
+// Footer section
+---
+
+<section class="snap-section items-center bg-white dark:bg-black text-gray-950 dark:text-white relative overflow-hidden border-t border-gray-200 dark:border-white/5" style="min-height: auto; height: auto; scroll-snap-align: end;">
+  <footer class="w-full py-12 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <a href="/" class="text-xl font-extralight tracking-wide transition-opacity font-logo">
+        marsic<span class="accent-gradient font-semibold">.</span>dev
+      </a>
+      <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-gray-600 dark:text-gray-500">
+        <a href="https://hypetech.io" class="footer-link relative hover:text-gray-950 dark:hover:text-white transition-colors">
+          hypetech.io
+        </a>
+        <a href="#ai" class="footer-link relative hover:text-gray-950 dark:hover:text-white transition-colors">
+          AI Focus
+        </a>
+        <a href="#expertise" class="footer-link relative hover:text-gray-950 dark:hover:text-white transition-colors">
+          Services
+        </a>
+        <a href="#courses" class="footer-link relative hover:text-gray-950 dark:hover:text-white transition-colors">
+          Courses
+        </a>
+        <a href="#connect" class="footer-link relative hover:text-gray-950 dark:hover:text-white transition-colors">
+          Work with me
+        </a>
+      </div>
+      <p class="text-xs text-gray-500 dark:text-gray-600">&copy; {new Date().getFullYear()} Marko Arsić</p>
+    </div>
+  </footer>
+</section>
+
+<style>
+  .accent-gradient {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .footer-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.2s ease, left 0.2s ease;
+  }
+
+  .footer-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+</style>

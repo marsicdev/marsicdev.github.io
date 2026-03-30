@@ -1,0 +1,107 @@
+---
+// Navigation bar with mobile hamburger menu
+---
+
+<nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-black/90 backdrop-blur-md border-b border-gray-200 dark:border-white/10 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 py-5 md:py-6 flex justify-between items-center">
+    <a href="/" class="text-xl font-extralight tracking-wide transition-opacity font-logo">
+      marsic<span class="accent-gradient font-semibold">.</span>dev
+    </a>
+    <!-- Desktop nav -->
+    <div class="hidden md:flex items-center gap-6">
+      <a href="#ai" class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-950 dark:hover:text-white transition-colors nav-link relative">AI Focus</a>
+      <a href="#about" class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-950 dark:hover:text-white transition-colors nav-link relative">About</a>
+      <a href="#expertise" class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-950 dark:hover:text-white transition-colors nav-link relative">Services</a>
+      <a href="#courses" class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-950 dark:hover:text-white transition-colors nav-link relative">Courses</a>
+      <a href="#connect" class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-950 dark:hover:text-white transition-colors nav-link relative">Work with me</a>
+      <a href="https://hypetech.io" class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-950 dark:hover:text-white transition-colors nav-link relative flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+          <path d="M8 2L14 14H2L8 2Z" />
+        </svg>
+        <span>hypetech</span>
+      </a>
+    </div>
+    <!-- Mobile hamburger -->
+    <button id="mobile-menu-toggle" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-600 dark:text-gray-400" aria-label="Toggle menu">
+      <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+      </svg>
+      <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+  <!-- Mobile menu panel -->
+  <div id="mobile-menu" class="md:hidden hidden bg-white/95 dark:bg-black/95 backdrop-blur-lg border-t border-gray-200 dark:border-white/10">
+    <div class="px-6 py-6 flex flex-col gap-5">
+      <a href="#ai" class="mobile-nav-link text-lg text-gray-700 dark:text-gray-300 hover:text-gray-950 dark:hover:text-white transition-colors">AI Focus</a>
+      <a href="#about" class="mobile-nav-link text-lg text-gray-700 dark:text-gray-300 hover:text-gray-950 dark:hover:text-white transition-colors">About</a>
+      <a href="#expertise" class="mobile-nav-link text-lg text-gray-700 dark:text-gray-300 hover:text-gray-950 dark:hover:text-white transition-colors">Services</a>
+      <a href="#courses" class="mobile-nav-link text-lg text-gray-700 dark:text-gray-300 hover:text-gray-950 dark:hover:text-white transition-colors">Courses</a>
+      <a href="#connect" class="mobile-nav-link text-lg text-gray-700 dark:text-gray-300 hover:text-gray-950 dark:hover:text-white transition-colors">Work with me</a>
+      <div class="pt-3 border-t border-gray-200 dark:border-white/10">
+        <a href="https://hypetech.io" class="mobile-nav-link text-lg text-gray-700 dark:text-gray-300 hover:text-gray-950 dark:hover:text-white transition-colors flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path d="M8 2L14 14H2L8 2Z" />
+          </svg>
+          hypetech.io
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .accent-gradient {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.2s ease, left 0.2s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+</style>
+
+<script>
+  const menuToggle = document.getElementById("mobile-menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const hamburgerIcon = document.getElementById("hamburger-icon");
+  const closeMenuIcon = document.getElementById("close-icon");
+
+  function toggleMobileMenu() {
+    const isOpen = !mobileMenu?.classList.contains("hidden");
+    if (isOpen) {
+      mobileMenu?.classList.add("hidden");
+      hamburgerIcon?.classList.remove("hidden");
+      closeMenuIcon?.classList.add("hidden");
+    } else {
+      mobileMenu?.classList.remove("hidden");
+      hamburgerIcon?.classList.add("hidden");
+      closeMenuIcon?.classList.remove("hidden");
+    }
+  }
+
+  menuToggle?.addEventListener("click", toggleMobileMenu);
+
+  document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu?.classList.add("hidden");
+      hamburgerIcon?.classList.remove("hidden");
+      closeMenuIcon?.classList.add("hidden");
+    });
+  });
+</script>

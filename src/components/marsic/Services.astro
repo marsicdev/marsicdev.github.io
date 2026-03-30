@@ -1,0 +1,105 @@
+---
+const expertise = [
+    {
+        label: "Software Architecture & System Design",
+        description: "End-to-end architecture for complex systems — from monoliths to microservices, database design to API strategy. I design systems that scale.",
+        icon: "architecture",
+    },
+    {
+        label: "Full-Stack Engineering",
+        description: "Web apps, mobile apps, backend services, APIs — the full spectrum. React, React Native, Node.js, Python, and whatever the project needs.",
+        icon: "code",
+    },
+    {
+        label: "Cloud & Infrastructure",
+        description: "AWS, GCP, Docker, CI/CD pipelines, serverless. From greenfield setup to migration and optimization of existing infrastructure.",
+        icon: "cloud",
+    },
+    {
+        label: "Technical Leadership",
+        description: "CTO-level advisory, tech due diligence, architecture reviews, team structure, and engineering culture. Fractional or project-based.",
+        icon: "compass",
+    },
+    {
+        label: "Training & Workshops",
+        description: "Hands-on workshops and conference talks on AI-powered development, modern engineering practices, and software architecture.",
+        icon: "presentation",
+    },
+    {
+        label: "Team Augmentation",
+        description: "Need senior engineering firepower? I embed with your team through hypetech.io to ship critical features and unblock complex problems.",
+        icon: "users",
+    },
+];
+---
+
+<section id="expertise" class="snap-section items-center px-6 md:px-12 bg-white dark:bg-black relative overflow-hidden border-b border-gray-200 dark:border-white/5">
+  <div class="geo-triangle triangle-lg bottom-[20%] right-[8%] animate-rotate-float"></div>
+  <div class="geo-square w-10 h-10 top-[15%] left-[12%] animate-drift-rotate"></div>
+  <div class="shape w-[350px] h-[350px] -top-44 -right-44 animate-spin-slow opacity-15 rounded-full"></div>
+
+  <div class="max-w-6xl mx-auto relative z-10 w-full">
+    <div class="max-w-3xl mb-16">
+      <span class="text-sm font-medium text-gray-500 dark:text-gray-500 uppercase tracking-[0.25em]">Consulting Services</span>
+      <h2 class="text-5xl md:text-6xl lg:text-7xl font-extralight mt-6 tracking-tight">
+        How I can <span class="font-black accent-gradient">help</span>
+      </h2>
+      <p class="text-gray-600 dark:text-gray-400 text-xl mt-8 leading-[1.7]">
+        Anything software and architecture related — from initial strategy to production delivery, solo or with a team behind me.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {expertise.map((item, index) => (
+        <div class={`fade-in-up fade-in-up-delay-${index + 1} group p-6 md:p-8 border border-gray-200 dark:border-white/10 bg-white dark:bg-white/[0.02] hover:bg-gray-50 dark:hover:bg-white/5 accent-glow transition-all duration-300`}>
+          <div class="flex items-center gap-3 mb-4">
+            <svg class="w-6 h-6 text-gray-400 dark:text-gray-500 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+              {item.icon === 'architecture' && (
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25a2.25 2.25 0 0 1-2.25-2.25v-2.25Z" />
+              )}
+              {item.icon === 'code' && (
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+              )}
+              {item.icon === 'cloud' && (
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+              )}
+              {item.icon === 'compass' && (
+                <path stroke-linecap="round" stroke-linejoin="round" d="m6.115 5.19.319 1.913A6 6 0 0 0 8.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 0 0 2.288-4.042 1.087 1.087 0 0 0-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 0 1-.98-.314l-.295-.295a1.125 1.125 0 0 1 0-1.591l.13-.132a1.125 1.125 0 0 1 1.3-.21l.603.302a.809.809 0 0 0 1.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 0 0 1.528-1.732l.146-.292M6.115 5.19A9 9 0 1 0 17.18 4.64M6.115 5.19A8.965 8.965 0 0 1 12 3c1.929 0 3.716.607 5.18 1.64" />
+              )}
+              {item.icon === 'presentation' && (
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" />
+              )}
+              {item.icon === 'users' && (
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+              )}
+            </svg>
+            <h3 class="text-lg font-medium text-gray-950 dark:text-white group-hover:translate-x-0.5 transition-transform duration-300">
+              {item.label}
+            </h3>
+          </div>
+          <p class="text-gray-600 dark:text-gray-400 text-base leading-[1.75]">
+            {item.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .accent-gradient {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .accent-glow:hover {
+    border-color: rgba(139, 92, 246, 0.4);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.08), 0 0 40px rgba(236, 72, 153, 0.05);
+  }
+
+  :is(.dark .accent-glow:hover) {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.12), 0 0 40px rgba(236, 72, 153, 0.08);
+  }
+</style>

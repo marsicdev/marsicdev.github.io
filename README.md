@@ -1,16 +1,42 @@
-# marsic.dev personal website
+# marsic.dev
 
-This is my personal website, built with [Astro](https://astro.build).
+Personal website and portfolio for Marko Arsic — independent software consultant and AI advisor.
 
-## 🧞 Commands
+**Live:** [marsic.dev](https://marsic.dev)
 
-All commands are run from the root of the project, from a terminal:
+## Tech Stack
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- [Astro](https://astro.build) v6 — static site generator
+- [Tailwind CSS](https://tailwindcss.com) v4 — utility-first styling
+- [TypeScript](https://typescriptlang.org)
+
+## Project Structure
+
+```text
+/
+├── public/               # Static assets (favicons, OG image, manifest)
+├── src/
+│   ├── components/marsic/ # Section components (Hero, Nav, AIFocus, etc.)
+│   ├── layouts/           # Base layout with SEO meta tags
+│   ├── pages/             # Routes (index, 404)
+│   └── styles/            # Global styles
+├── astro.config.mjs
+└── package.json
+```
+
+## Development
+
+```sh
+bun install
+bun dev        # Start dev server at localhost:4321
+bun build      # Build production site to ./dist/
+bun preview    # Preview production build locally
+```
+
+## SEO
+
+- Open Graph and Twitter Card meta tags
+- Structured data (JSON-LD ProfilePage schema)
+- Auto-generated sitemap via `@astrojs/sitemap`
+- robots.txt, web manifest, and favicon variants
+- Canonical URLs
