@@ -14,7 +14,10 @@
     <div class="flex justify-center">
       <div class="photo-ring relative w-32 h-32 md:w-40 md:h-40 rounded-full p-[3px] flex-shrink-0">
         <div class="w-full h-full rounded-full overflow-hidden">
-          <img src="/marsicdev-profile.jpg" alt="Marko Arsić" class="w-full h-full object-cover rounded-full" />
+          <picture>
+            <source srcset="/marsicdev-profile.webp" type="image/webp" />
+            <img src="/marsicdev-profile.jpg" alt="Marko Arsić" class="w-full h-full object-cover rounded-full" width="160" height="160" loading="eager" />
+          </picture>
         </div>
       </div>
     </div>

@@ -62,7 +62,7 @@ const personSchema = {
 >
   <Nav />
 
-  <div class="snap-container">
+  <main class="snap-container">
     <Hero />
     <AIFocus />
     <About />
@@ -70,21 +70,21 @@ const personSchema = {
     <Courses />
     <Connect />
     <Footer />
-  </div>
+  </main>
 </Layout>
 
 <style>
   /* Mobile snap scroll fix */
   @media (max-width: 767px) {
-    .snap-container {
+    main.snap-container {
       scroll-snap-type: y proximity;
     }
-    .snap-container :global(.snap-section) {
+    main.snap-container :global(.snap-section) {
       min-height: auto;
       padding-top: 5rem;
       padding-bottom: 4rem;
     }
-    .snap-container :global(.snap-section.hero-section) {
+    main.snap-container :global(.snap-section.hero-section) {
       min-height: 100vh;
       min-height: 100dvh;
       padding-top: 0;
