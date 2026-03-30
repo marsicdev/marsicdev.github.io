@@ -50,8 +50,7 @@ const bodyClasses = [
     )}
 
     <!-- Theme Color -->
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL} />
@@ -103,14 +102,6 @@ const bodyClasses = [
       <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     )}
 
-    <!-- Theme Initialization Script (Prevents FOUC) - Dark theme is default -->
-    <script is:inline>
-      if (localStorage.theme === 'light') {
-        document.documentElement.classList.remove('dark')
-      } else {
-        document.documentElement.classList.add('dark')
-      }
-    </script>
   </head>
   <body class={bodyClasses}>
     <slot />
